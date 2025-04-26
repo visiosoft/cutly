@@ -150,3 +150,4 @@ F:\cutly\Cutly\obj\Debug\net9.0\refint\Cutly.dll
 F:\cutly\Cutly\obj\Debug\net9.0\Cutly.pdb
 F:\cutly\Cutly\obj\Debug\net9.0\Cutly.genruntimeconfig.cache
 F:\cutly\Cutly\obj\Debug\net9.0\ref\Cutly.dll
+F:\cutly\Cutly\obj\Debug\net9.0\Cutly.sourcelink.json
