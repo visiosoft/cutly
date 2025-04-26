@@ -1,0 +1,6 @@
+@Cutly_HostAddress = http://localhost:5269
+
+GET {{Cutly_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
