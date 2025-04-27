@@ -24,8 +24,20 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[F:/cutly/Cutly/Pages/Copy.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29weS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [F:/cutly/Cutly/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/cutly/Cutly/Pages/UrlShortener.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXJsU2hvcnRlbmVyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/cutly/Cutly/Pages/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [F:/cutly/Cutly/Shared/MainLayout.razor]
@@ -34,4 +46,8 @@ build_metadata.AdditionalFiles.CssScope =
 
 [F:/cutly/Cutly/Pages/_Host.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/cutly/Cutly/Pages/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0xheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

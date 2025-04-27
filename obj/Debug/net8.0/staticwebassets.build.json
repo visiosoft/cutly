@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "sAmk0oFKOVqI8Enl/0J71Ardix7Cuv7xKRLd2sc2aIg=",
+  "Hash": "pxST4fC2q7U0Srb8rgFM1x2ZQyldFIFBUZxOjHm7Z8I=",
   "Source": "Cutly",
   "BasePath": "_content/Cutly",
   "Mode": "Default",
@@ -36,6 +36,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\app.css"
+    },
+    {
+      "Identity": "F:\\cutly\\Cutly\\wwwroot\\css\\site.css",
+      "SourceId": "Cutly",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\cutly\\Cutly\\wwwroot\\",
+      "BasePath": "_content/Cutly",
+      "RelativePath": "css/site#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5eo39vgod8",
+      "Integrity": "PSPHmSkUHTgv2C9eFjWxwf+V3knpdC5xMK+PMhQ2VQc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
       "Identity": "F:\\cutly\\Cutly\\wwwroot\\js\\clipboard.js",
@@ -139,6 +160,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-c47zGm8LbQeR8sAnjWNqkKJp+Qf9IPKoPl7QoRSVX3w="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.5eo39vgod8.css",
+      "AssetFile": "F:\\cutly\\Cutly\\wwwroot\\css\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1478"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PSPHmSkUHTgv2C9eFjWxwf+V3knpdC5xMK+PMhQ2VQc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 27 Apr 2025 10:12:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5eo39vgod8"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-PSPHmSkUHTgv2C9eFjWxwf+V3knpdC5xMK+PMhQ2VQc="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.css",
+      "AssetFile": "F:\\cutly\\Cutly\\wwwroot\\css\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1478"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PSPHmSkUHTgv2C9eFjWxwf+V3knpdC5xMK+PMhQ2VQc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 27 Apr 2025 10:12:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-PSPHmSkUHTgv2C9eFjWxwf+V3knpdC5xMK+PMhQ2VQc="
         }
       ]
     },

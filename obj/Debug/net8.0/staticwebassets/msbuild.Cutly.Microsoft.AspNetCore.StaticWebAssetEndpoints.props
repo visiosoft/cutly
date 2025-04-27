@@ -12,6 +12,18 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"dgcq081eew"},{"Name":"integrity","Value":"sha256-c47zGm8LbQeR8sAnjWNqkKJp\u002BQf9IPKoPl7QoRSVX3w="},{"Name":"label","Value":"_content/Cutly/css/app.css"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"892"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022c47zGm8LbQeR8sAnjWNqkKJp\u002BQf9IPKoPl7QoRSVX3w=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Apr 2025 09:46:07 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Cutly/css/site.5eo39vgod8.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"5eo39vgod8"},{"Name":"integrity","Value":"sha256-PSPHmSkUHTgv2C9eFjWxwf\u002BV3knpdC5xMK\u002BPMhQ2VQc="},{"Name":"label","Value":"_content/Cutly/css/site.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1478"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022PSPHmSkUHTgv2C9eFjWxwf\u002BV3knpdC5xMK\u002BPMhQ2VQc=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Apr 2025 10:12:19 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Cutly/css/site.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-PSPHmSkUHTgv2C9eFjWxwf\u002BV3knpdC5xMK\u002BPMhQ2VQc="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1478"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022PSPHmSkUHTgv2C9eFjWxwf\u002BV3knpdC5xMK\u002BPMhQ2VQc=\u0022"},{"Name":"Last-Modified","Value":"Sun, 27 Apr 2025 10:12:19 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Cutly/js/clipboard.582yzztl0m.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\clipboard.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
