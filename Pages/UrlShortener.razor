@@ -29,7 +29,7 @@
                                 <h5>Your shortened URL:</h5>
                                 <div class="d-flex align-items-center">
                                     <input type="text" class="form-control" value="@shortenedUrl" readonly />
-                                    <button class="btn btn-outline-secondary ms-2" @onclick="CopyToClipboard">
+                                    <button class="btn btn-outline-secondary ms-2" @onclick="() => CopyToClipboard(shortenedUrl)">
                                         <i class="bi bi-clipboard"></i> Copy
                                     </button>
                                 </div>
@@ -84,11 +84,11 @@
         }
     }
 
-    private async Task CopyToClipboard()
+    private async Task CopyToClipboard(string url)
     {
         try
         {
-            await JSRuntime.InvokeVoidAsync("navigator.clipboard.writeText", shortenedUrl);
+            await JSRuntime.InvokeVoidAsync("navigator.clipboard.writeText", url);
         }
         catch
         {
