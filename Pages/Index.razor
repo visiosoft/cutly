@@ -1,92 +1,259 @@
 @page "/"
+@layout LandingLayout
 @inject IUrlShortenerService UrlService
 @inject NavigationManager NavigationManager
 @inject IJSRuntime JSRuntime
 
 <PageTitle>Cutly - URL Shortener</PageTitle>
 
-<div class="container mt-5">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-body">
-                    <h1 class="text-center mb-4">Shorly URL Shortener</h1>
-                    
-                    <div class="mb-4">
-                        <div class="input-group">
-                            <input @bind="longUrl" 
-                                   @bind:event="oninput"
-                                   class="form-control" 
-                                   placeholder="Enter your long URL here" />
-                            <button class="btn btn-primary" 
-                                    @onclick="ShortenUrl" 
-                                    disabled="@(!IsValidUrl)">
-                                Shorten URL
-                            </button>
-                        </div>
-                        @if (!string.IsNullOrEmpty(errorMessage))
-                        {
-                            <div class="text-danger mt-2">@errorMessage</div>
-                        }
-                    </div>
-
-                    @if (!string.IsNullOrEmpty(shortenedUrl))
-                    {
-                        <div class="alert alert-success">
-                            <h5>Your shortened URL:</h5>
-                            <div class="input-group">
-                                <input type="text" 
-                                       class="form-control" 
-                                       value="@shortenedUrl" 
-                                       readonly />
-                                <button class="btn btn-outline-secondary" 
-                                        @onclick="CopyToClipboard">
-                                    Copy
-                                </button>
-                            </div>
-                        </div>
-                    }
-                </div>
+<div class="hero-section">
+    <div class="hero-content">
+        <h1>Shorten Your Links,<br />Expand Your Reach</h1>
+        <p class="hero-description">Create branded short links, track clicks, and analyze your audience with our powerful URL shortener platform.</p>
+        <div class="url-input-container">
+            <div class="input-group">
+                <input @bind="longUrl" 
+                       @bind:event="oninput"
+                       class="form-control" 
+                       placeholder="Enter your long URL here" />
+                <button class="btn btn-primary" 
+                        @onclick="ShortenUrl" 
+                        disabled="@(!IsValidUrl)">
+                    <i class="fas fa-link"></i> Shorten URL
+                </button>
             </div>
-
-            @if (recentUrls?.Any() == true)
+            @if (!string.IsNullOrEmpty(errorMessage))
             {
-                <div class="card mt-4">
-                    <div class="card-body">
-                        <h2 class="text-center mb-4">Recent URLs</h2>
-                        <div class="table-responsive">
-                            <table class="table">
-                                <thead>
-                                    <tr>
-                                        <th>Short URL</th>
-                                        <th>Original URL</th>
-                                        <th>Clicks</th>
-                                        <th>Created</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    @foreach (var url in recentUrls)
-                                    {
-                                        <tr>
-                                            <td>
-                                                <a href="@url.ShortUrl" target="_blank">@url.ShortUrl</a>
-                                            </td>
-                                            <td>
-                                                <a href="@url.LongUrl" target="_blank">@url.LongUrl</a>
-                                            </td>
-                                            <td>@url.ClickCount</td>
-                                            <td>@url.CreatedAt.ToString("g")</td>
-                                        </tr>
-                                    }
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
+                <div class="alert alert-error mt-2">@errorMessage</div>
             }
         </div>
     </div>
 </div>
+
+<div class="features-section">
+    <div class="container">
+        @if (!string.IsNullOrEmpty(shortenedUrl))
+        {
+            <div class="card result-card">
+                <h3>Your shortened URL is ready!</h3>
+                <div class="input-group">
+                    <input type="text" 
+                           class="form-control" 
+                           value="@shortenedUrl" 
+                           readonly />
+                    <button class="btn btn-secondary" 
+                            @onclick="CopyToClipboard">
+                        <i class="fas fa-copy"></i> Copy
+                    </button>
+                </div>
+            </div>
+        }
+
+        @if (recentUrls?.Any() == true)
+        {
+            <div class="card recent-urls">
+                <h2>Recent URLs</h2>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Short URL</th>
+                                <th>Original URL</th>
+                                <th>Clicks</th>
+                                <th>Created</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var url in recentUrls)
+                            {
+                                <tr>
+                                    <td>
+                                        <a href="@url.ShortUrl" target="_blank" class="short-url">
+                                            <i class="fas fa-link"></i> @url.ShortUrl
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="@url.LongUrl" target="_blank" class="long-url">
+                                            @url.LongUrl
+                                        </a>
+                                    </td>
+                                    <td class="clicks">
+                                        <i class="fas fa-chart-line"></i> @url.ClickCount
+                                    </td>
+                                    <td class="date">
+                                        <i class="fas fa-calendar"></i> @url.CreatedAt.ToString("g")
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+<style>
+    .hero-section {
+        background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-align: center;
+        padding: 6rem 2rem;
+        position: relative;
+    }
+
+    .hero-content {
+        max-width: 800px;
+        width: 100%;
+    }
+
+    .hero-content h1 {
+        font-size: 4rem;
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+        line-height: 1.2;
+    }
+
+    .hero-description {
+        font-size: 1.25rem;
+        margin-bottom: 3rem;
+        line-height: 1.6;
+        opacity: 0.9;
+    }
+
+    .url-input-container {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 2rem;
+        border-radius: 1rem;
+        backdrop-filter: blur(10px);
+    }
+
+    .input-group {
+        display: flex;
+        gap: 0.5rem;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .input-group .form-control {
+        flex: 1;
+        height: 3rem;
+        font-size: 1rem;
+        padding: 0 1.5rem;
+        border: none;
+        border-radius: 0.5rem;
+        background: white;
+    }
+
+    .input-group .btn {
+        height: 3rem;
+        padding: 0 2rem;
+        font-size: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .features-section {
+        padding: 4rem 2rem;
+        background-color: #f8fafc;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .result-card {
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    .result-card h3 {
+        margin-bottom: 1.5rem;
+        color: var(--text-color);
+    }
+
+    .recent-urls {
+        background: white;
+        border-radius: 1rem;
+        overflow: hidden;
+    }
+
+    .recent-urls h2 {
+        margin-bottom: 1.5rem;
+        color: var(--text-color);
+    }
+
+    .table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .table th {
+        text-align: left;
+        padding: 1rem;
+        border-bottom: 1px solid var(--border-color);
+        color: var(--secondary-color);
+        font-weight: 500;
+    }
+
+    .table td {
+        padding: 1rem;
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .short-url {
+        color: var(--primary-color);
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .long-url {
+        color: var(--secondary-color);
+        max-width: 300px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        display: block;
+    }
+
+    .clicks, .date {
+        color: var(--secondary-color);
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    @@media (max-width: 768px) {
+        .hero-content h1 {
+            font-size: 2.5rem;
+        }
+
+        .hero-description {
+            font-size: 1.1rem;
+        }
+
+        .input-group {
+            flex-direction: column;
+        }
+
+        .input-group .form-control,
+        .input-group .btn {
+            width: 100%;
+        }
+
+        .table {
+            display: block;
+            overflow-x: auto;
+        }
+    }
+</style>
 
 @code {
     private string longUrl = string.Empty;
@@ -128,8 +295,8 @@
         }
     }
 
-    private void CopyToClipboard()
+    private async Task CopyToClipboard()
     {
-        NavigationManager.NavigateTo($"copy?url={Uri.EscapeDataString(shortenedUrl)}");
+        await JSRuntime.InvokeVoidAsync("navigator.clipboard.writeText", shortenedUrl);
     }
 } 

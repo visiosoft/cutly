@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "pxST4fC2q7U0Srb8rgFM1x2ZQyldFIFBUZxOjHm7Z8I=",
+  "Hash": "NviHJJfjJ9RUcUBy1zYLLTpllEIwyMcQE8IMk/M/QMw=",
   "Source": "Cutly",
   "BasePath": "_content/Cutly",
   "Mode": "Default",
@@ -52,11 +52,32 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "5eo39vgod8",
-      "Integrity": "PSPHmSkUHTgv2C9eFjWxwf+V3knpdC5xMK+PMhQ2VQc=",
+      "Fingerprint": "fw379a3l6y",
+      "Integrity": "f5AsvlAbBnVjKwsv77KIhmR20t6wwiJCUDEKSaT5dBQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "F:\\cutly\\Cutly\\wwwroot\\index.html",
+      "SourceId": "Cutly",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\cutly\\Cutly\\wwwroot\\",
+      "BasePath": "_content/Cutly",
+      "RelativePath": "index#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "v1kmmqhwcu",
+      "Integrity": "/WJbsPyvZYDWglYrfSMMFjwFM/ZCjFcKiP1riDzXVA4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
     },
     {
       "Identity": "F:\\cutly\\Cutly\\wwwroot\\js\\clipboard.js",
@@ -164,51 +185,6 @@
       ]
     },
     {
-      "Route": "css/site.5eo39vgod8.css",
-      "AssetFile": "F:\\cutly\\Cutly\\wwwroot\\css\\site.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1478"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"PSPHmSkUHTgv2C9eFjWxwf+V3knpdC5xMK+PMhQ2VQc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 27 Apr 2025 10:12:19 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "5eo39vgod8"
-        },
-        {
-          "Name": "label",
-          "Value": "css/site.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-PSPHmSkUHTgv2C9eFjWxwf+V3knpdC5xMK+PMhQ2VQc="
-        }
-      ]
-    },
-    {
       "Route": "css/site.css",
       "AssetFile": "F:\\cutly\\Cutly\\wwwroot\\css\\site.css",
       "Selectors": [],
@@ -219,7 +195,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1478"
+          "Value": "5391"
         },
         {
           "Name": "Content-Type",
@@ -227,11 +203,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"PSPHmSkUHTgv2C9eFjWxwf+V3knpdC5xMK+PMhQ2VQc=\""
+          "Value": "\"f5AsvlAbBnVjKwsv77KIhmR20t6wwiJCUDEKSaT5dBQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 27 Apr 2025 10:12:19 GMT"
+          "Value": "Sun, 27 Apr 2025 12:21:10 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -241,7 +217,134 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-PSPHmSkUHTgv2C9eFjWxwf+V3knpdC5xMK+PMhQ2VQc="
+          "Value": "sha256-f5AsvlAbBnVjKwsv77KIhmR20t6wwiJCUDEKSaT5dBQ="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.fw379a3l6y.css",
+      "AssetFile": "F:\\cutly\\Cutly\\wwwroot\\css\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5391"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"f5AsvlAbBnVjKwsv77KIhmR20t6wwiJCUDEKSaT5dBQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 27 Apr 2025 12:21:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fw379a3l6y"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-f5AsvlAbBnVjKwsv77KIhmR20t6wwiJCUDEKSaT5dBQ="
+        }
+      ]
+    },
+    {
+      "Route": "index.html",
+      "AssetFile": "F:\\cutly\\Cutly\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "476"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/WJbsPyvZYDWglYrfSMMFjwFM/ZCjFcKiP1riDzXVA4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 27 Apr 2025 12:18:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-/WJbsPyvZYDWglYrfSMMFjwFM/ZCjFcKiP1riDzXVA4="
+        }
+      ]
+    },
+    {
+      "Route": "index.v1kmmqhwcu.html",
+      "AssetFile": "F:\\cutly\\Cutly\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "476"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/WJbsPyvZYDWglYrfSMMFjwFM/ZCjFcKiP1riDzXVA4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 27 Apr 2025 12:18:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "v1kmmqhwcu"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-/WJbsPyvZYDWglYrfSMMFjwFM/ZCjFcKiP1riDzXVA4="
         }
       ]
     },

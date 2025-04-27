@@ -1,0 +1,113 @@
+@inherits LayoutComponentBase
+
+<PageTitle>Cutly - URL Shortener</PageTitle>
+
+<div class="page-landing">
+    <main>
+        <div class="top-row">
+            <div class="logo">
+                <a href="/" class="brand">Cutly</a>
+            </div>
+            <div class="nav-links">
+                <a href="/features" class="nav-link">Features</a>
+                <a href="/pricing" class="nav-link">Pricing</a>
+                <a href="/login" class="nav-link">Login</a>
+                <a href="/signup" class="nav-link btn-primary">Sign Up</a>
+            </div>
+        </div>
+
+        <article class="content">
+            @Body
+        </article>
+    </main>
+</div>
+
+<style>
+    .page-landing {
+        min-height: 100vh;
+        background-color: #f8fafc;
+    }
+
+    .top-row {
+        background: transparent;
+        padding: 1.5rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+    }
+
+    .brand {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: white;
+        text-decoration: none;
+        transition: opacity 0.2s;
+    }
+
+    .brand:hover {
+        opacity: 0.9;
+    }
+
+    .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .nav-link {
+        color: white;
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+        transition: all 0.2s;
+        font-weight: 500;
+    }
+
+    .nav-link:hover {
+        opacity: 0.9;
+    }
+
+    .btn-primary {
+        background-color: white;
+        color: var(--primary-color);
+    }
+
+    .btn-primary:hover {
+        background-color: #f8fafc;
+        color: var(--primary-color);
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    @@media (max-width: 768px) {
+        .top-row {
+            padding: 1rem;
+        }
+
+        .nav-links {
+            gap: 1rem;
+        }
+
+        .nav-link {
+            padding: 0.5rem;
+        }
+    }
+
+    @@media (max-width: 640px) {
+        .nav-links a:not(.btn-primary) {
+            display: none;
+        }
+    }
+</style> 

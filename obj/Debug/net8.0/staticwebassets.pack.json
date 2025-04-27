@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "F:\\cutly\\Cutly\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
       "Id": "F:\\cutly\\Cutly\\wwwroot\\js\\clipboard.js",
       "PackagePath": "staticwebassets\\js\\clipboard.js"
     },
