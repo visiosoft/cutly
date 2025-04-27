@@ -1,0 +1,38 @@
+@page "/copy"
+@inject IJSRuntime JSRuntime
+@inject NavigationManager NavigationManager
+
+<PageTitle>Copy URL - Cutly</PageTitle>
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-body text-center">
+                    <h2>URL Copied!</h2>
+                    <p class="mb-4">The shortened URL has been copied to your clipboard.</p>
+                    <button class="btn btn-primary" @onclick="GoBack">Back to Home</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    [SupplyParameterFromQuery]
+    public string? Url { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        if (!string.IsNullOrEmpty(Url))
+        {
+            await JSRuntime.InvokeVoidAsync("navigator.clipboard.writeText", Url);
+        }
+    }
+
+    private void GoBack()
+    {
+        NavigationManager.NavigateTo("/");
+    }
+} 

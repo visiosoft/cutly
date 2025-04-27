@@ -4,25 +4,26 @@ using System.Threading.Tasks;
 using Cutly.Data;
 using Cutly.Models;
 using Microsoft.EntityFrameworkCore;
+using System.Net.Http.Json;
+using Microsoft.Extensions.Configuration;
 
 namespace Cutly.Services
 {
-    public interface IUrlShortenerService
-    {
-        Task<string> CreateShortUrl(string originalUrl);
-        Task<string?> GetOriginalUrl(string shortCode);
-        Task IncrementClickCount(string shortCode);
-    }
-
     public class UrlShortenerService : IUrlShortenerService
     {
         private readonly ApplicationDbContext _context;
         private const string Characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
         private const int ShortCodeLength = 6;
+        private readonly HttpClient _httpClient;
+        private readonly IConfiguration _configuration;
+        private readonly string _baseUrl;
 
-        public UrlShortenerService(ApplicationDbContext context)
+        public UrlShortenerService(ApplicationDbContext context, HttpClient httpClient, IConfiguration configuration)
         {
             _context = context;
+            _httpClient = httpClient;
+            _configuration = configuration;
+            _baseUrl = configuration["BaseUrl"] ?? "http://localhost:5269";
         }
 
         public async Task<string> CreateShortUrl(string originalUrl)
@@ -70,6 +71,51 @@ namespace Cutly.Services
                 .Select(s => s[random.Next(s.Length)]).ToArray());
 
             return shortCode;
+        }
+
+        public async Task<ShortenedUrl> ShortenUrlAsync(string longUrl)
+        {
+            var shortCode = await CreateShortUrl(longUrl);
+            return new ShortenedUrl
+            {
+                LongUrl = longUrl,
+                ShortUrl = $"{_baseUrl}/s/{shortCode}",
+                CreatedAt = DateTime.UtcNow,
+                ClickCount = 0
+            };
+        }
+
+        public async Task<ShortenedUrl?> GetUrlInfoAsync(string shortCode)
+        {
+            var mapping = await _context.UrlMappings
+                .FirstOrDefaultAsync(u => u.ShortCode == shortCode);
+
+            if (mapping == null)
+                return null;
+
+            return new ShortenedUrl
+            {
+                LongUrl = mapping.OriginalUrl,
+                ShortUrl = $"{_baseUrl}/s/{mapping.ShortCode}",
+                CreatedAt = mapping.CreatedAt,
+                ClickCount = mapping.ClickCount
+            };
+        }
+
+        public async Task<IEnumerable<ShortenedUrl>> GetRecentUrlsAsync()
+        {
+            var mappings = await _context.UrlMappings
+                .OrderByDescending(u => u.CreatedAt)
+                .Take(10)
+                .ToListAsync();
+
+            return mappings.Select(m => new ShortenedUrl
+            {
+                LongUrl = m.OriginalUrl,
+                ShortUrl = $"{_baseUrl}/s/{m.ShortCode}",
+                CreatedAt = m.CreatedAt,
+                ClickCount = m.ClickCount
+            });
         }
     }
 } 

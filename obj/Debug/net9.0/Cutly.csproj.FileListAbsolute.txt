@@ -151,3 +151,9 @@ F:\cutly\Cutly\obj\Debug\net9.0\Cutly.pdb
 F:\cutly\Cutly\obj\Debug\net9.0\Cutly.genruntimeconfig.cache
 F:\cutly\Cutly\obj\Debug\net9.0\ref\Cutly.dll
 F:\cutly\Cutly\obj\Debug\net9.0\Cutly.sourcelink.json
+F:\cutly\Cutly\obj\Debug\net9.0\Cutly.RazorAssemblyInfo.cache
+F:\cutly\Cutly\obj\Debug\net9.0\Cutly.RazorAssemblyInfo.cs
+F:\cutly\Cutly\bin\Debug\net9.0\Cutly.staticwebassets.runtime.json
+F:\cutly\Cutly\obj\Debug\net9.0\compressed\x9s7dj7oni-dgcq081eew.gz
+F:\cutly\Cutly\obj\Debug\net9.0\compressed\w1dxbfxr1f-582yzztl0m.gz
+F:\cutly\Cutly\obj\Debug\net9.0\compressed\g7szqir9lb-5eo39vgod8.gz

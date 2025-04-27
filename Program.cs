@@ -7,15 +7,17 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-builder.Services.AddOpenApi();
-
-// Add controllers
 builder.Services.AddControllers();
+builder.Services.AddRazorPages();
+builder.Services.AddServerSideBlazor();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new() { Title = "Cutly API", Version = "v1" });
 });
+
+// Add HttpClient
+builder.Services.AddHttpClient();
 
 // Add DbContext
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
@@ -35,21 +37,26 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
-    app.MapOpenApi();
     app.UseSwagger();
     app.UseSwaggerUI(c =>
     {
         c.SwaggerEndpoint("/swagger/v1/swagger.json", "Cutly API v1");
-        c.RoutePrefix = "swagger"; // Move Swagger UI to /swagger
+        c.RoutePrefix = "swagger";
     });
 }
 
 app.UseHttpsRedirection();
+app.UseStaticFiles();
+app.UseRouting();
 app.UseAuthorization();
+
+app.MapRazorPages();
+app.MapBlazorHub();
+app.MapFallbackToPage("/_Host");
 app.MapControllers();
 
-// Add a custom route for short URLs at the root path
-app.MapGet("/{shortCode}", async (string shortCode, IUrlShortenerService urlShortenerService) =>
+// Add a custom route for short URLs
+app.MapGet("/s/{shortCode}", async (string shortCode, IUrlShortenerService urlShortenerService) =>
 {
     var originalUrl = await urlShortenerService.GetOriginalUrl(shortCode);
     if (string.IsNullOrEmpty(originalUrl))

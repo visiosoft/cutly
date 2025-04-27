@@ -1,12 +1,1042 @@
 {
   "Version": 1,
-  "Hash": "TnfTUpa7Khh/Wh5FaArKqumWEzRBBAgyF3ZlOshlGb8=",
+  "Hash": "ivP0QzPAeLKrD5zZPYlqXnMWp+T3lPfpzeHDWtJzud8=",
   "Source": "Cutly",
   "BasePath": "_content/Cutly",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": [],
-  "Endpoints": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "Cutly\\wwwroot",
+      "Source": "Cutly",
+      "ContentRoot": "F:\\cutly\\Cutly\\wwwroot\\",
+      "BasePath": "_content/Cutly",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "F:\\cutly\\Cutly\\obj\\Debug\\net9.0\\compressed\\g7szqir9lb-5eo39vgod8.gz",
+      "SourceId": "Cutly",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\cutly\\Cutly\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/Cutly",
+      "RelativePath": "css/site#[.{fingerprint=5eo39vgod8}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "F:\\cutly\\Cutly\\wwwroot\\css\\site.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "poh3ejx1rt",
+      "Integrity": "ScYhI8yFTR46tr8j8RM4oWvv3b1wgX6xQ1McUdqIoGw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "F:\\cutly\\Cutly\\wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "F:\\cutly\\Cutly\\obj\\Debug\\net9.0\\compressed\\w1dxbfxr1f-582yzztl0m.gz",
+      "SourceId": "Cutly",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\cutly\\Cutly\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/Cutly",
+      "RelativePath": "js/clipboard#[.{fingerprint=582yzztl0m}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "F:\\cutly\\Cutly\\wwwroot\\js\\clipboard.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "0xtf9qtmq1",
+      "Integrity": "NOZSf+f3WOINrUMKxG0gpfxAa1HDlWZIrOKPRVAotmI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "F:\\cutly\\Cutly\\wwwroot\\js\\clipboard.js"
+    },
+    {
+      "Identity": "F:\\cutly\\Cutly\\obj\\Debug\\net9.0\\compressed\\x9s7dj7oni-dgcq081eew.gz",
+      "SourceId": "Cutly",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\cutly\\Cutly\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/Cutly",
+      "RelativePath": "css/app#[.{fingerprint=dgcq081eew}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "F:\\cutly\\Cutly\\wwwroot\\css\\app.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "e22upublic",
+      "Integrity": "Crlnk6qygfy7ht6npIh4+cvPQ4jeaC0eSs4HKzKKDw4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "F:\\cutly\\Cutly\\wwwroot\\css\\app.css"
+    },
+    {
+      "Identity": "F:\\cutly\\Cutly\\wwwroot\\css\\app.css",
+      "SourceId": "Cutly",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\cutly\\Cutly\\wwwroot\\",
+      "BasePath": "_content/Cutly",
+      "RelativePath": "css/app#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "dgcq081eew",
+      "Integrity": "c47zGm8LbQeR8sAnjWNqkKJp+Qf9IPKoPl7QoRSVX3w=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\app.css"
+    },
+    {
+      "Identity": "F:\\cutly\\Cutly\\wwwroot\\css\\site.css",
+      "SourceId": "Cutly",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\cutly\\Cutly\\wwwroot\\",
+      "BasePath": "_content/Cutly",
+      "RelativePath": "css/site#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5eo39vgod8",
+      "Integrity": "PSPHmSkUHTgv2C9eFjWxwf+V3knpdC5xMK+PMhQ2VQc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "F:\\cutly\\Cutly\\wwwroot\\js\\clipboard.js",
+      "SourceId": "Cutly",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\cutly\\Cutly\\wwwroot\\",
+      "BasePath": "_content/Cutly",
+      "RelativePath": "js/clipboard#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "582yzztl0m",
+      "Integrity": "xb51PkCPDgg4cGT6yMfk+ImSppl5uzN/u0klWXXpj4Y=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\clipboard.js"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "css/app.css",
+      "AssetFile": "F:\\cutly\\Cutly\\obj\\Debug\\net9.0\\compressed\\x9s7dj7oni-dgcq081eew.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.002283105023"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "437"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Crlnk6qygfy7ht6npIh4+cvPQ4jeaC0eSs4HKzKKDw4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 27 Apr 2025 09:46:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"c47zGm8LbQeR8sAnjWNqkKJp+Qf9IPKoPl7QoRSVX3w=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-c47zGm8LbQeR8sAnjWNqkKJp+Qf9IPKoPl7QoRSVX3w="
+        }
+      ]
+    },
+    {
+      "Route": "css/app.css",
+      "AssetFile": "F:\\cutly\\Cutly\\wwwroot\\css\\app.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "892"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"c47zGm8LbQeR8sAnjWNqkKJp+Qf9IPKoPl7QoRSVX3w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 27 Apr 2025 09:46:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-c47zGm8LbQeR8sAnjWNqkKJp+Qf9IPKoPl7QoRSVX3w="
+        }
+      ]
+    },
+    {
+      "Route": "css/app.css.gz",
+      "AssetFile": "F:\\cutly\\Cutly\\obj\\Debug\\net9.0\\compressed\\x9s7dj7oni-dgcq081eew.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "437"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Crlnk6qygfy7ht6npIh4+cvPQ4jeaC0eSs4HKzKKDw4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 27 Apr 2025 09:46:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Crlnk6qygfy7ht6npIh4+cvPQ4jeaC0eSs4HKzKKDw4="
+        }
+      ]
+    },
+    {
+      "Route": "css/app.dgcq081eew.css",
+      "AssetFile": "F:\\cutly\\Cutly\\obj\\Debug\\net9.0\\compressed\\x9s7dj7oni-dgcq081eew.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.002283105023"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "437"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Crlnk6qygfy7ht6npIh4+cvPQ4jeaC0eSs4HKzKKDw4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 27 Apr 2025 09:46:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"c47zGm8LbQeR8sAnjWNqkKJp+Qf9IPKoPl7QoRSVX3w=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dgcq081eew"
+        },
+        {
+          "Name": "label",
+          "Value": "css/app.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-c47zGm8LbQeR8sAnjWNqkKJp+Qf9IPKoPl7QoRSVX3w="
+        }
+      ]
+    },
+    {
+      "Route": "css/app.dgcq081eew.css",
+      "AssetFile": "F:\\cutly\\Cutly\\wwwroot\\css\\app.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "892"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"c47zGm8LbQeR8sAnjWNqkKJp+Qf9IPKoPl7QoRSVX3w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 27 Apr 2025 09:46:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dgcq081eew"
+        },
+        {
+          "Name": "label",
+          "Value": "css/app.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-c47zGm8LbQeR8sAnjWNqkKJp+Qf9IPKoPl7QoRSVX3w="
+        }
+      ]
+    },
+    {
+      "Route": "css/app.dgcq081eew.css.gz",
+      "AssetFile": "F:\\cutly\\Cutly\\obj\\Debug\\net9.0\\compressed\\x9s7dj7oni-dgcq081eew.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "437"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Crlnk6qygfy7ht6npIh4+cvPQ4jeaC0eSs4HKzKKDw4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 27 Apr 2025 09:46:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dgcq081eew"
+        },
+        {
+          "Name": "label",
+          "Value": "css/app.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Crlnk6qygfy7ht6npIh4+cvPQ4jeaC0eSs4HKzKKDw4="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.5eo39vgod8.css",
+      "AssetFile": "F:\\cutly\\Cutly\\obj\\Debug\\net9.0\\compressed\\g7szqir9lb-5eo39vgod8.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001865671642"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "535"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ScYhI8yFTR46tr8j8RM4oWvv3b1wgX6xQ1McUdqIoGw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 27 Apr 2025 10:12:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"PSPHmSkUHTgv2C9eFjWxwf+V3knpdC5xMK+PMhQ2VQc=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5eo39vgod8"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-PSPHmSkUHTgv2C9eFjWxwf+V3knpdC5xMK+PMhQ2VQc="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.5eo39vgod8.css",
+      "AssetFile": "F:\\cutly\\Cutly\\wwwroot\\css\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1478"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PSPHmSkUHTgv2C9eFjWxwf+V3knpdC5xMK+PMhQ2VQc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 27 Apr 2025 10:12:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5eo39vgod8"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-PSPHmSkUHTgv2C9eFjWxwf+V3knpdC5xMK+PMhQ2VQc="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.5eo39vgod8.css.gz",
+      "AssetFile": "F:\\cutly\\Cutly\\obj\\Debug\\net9.0\\compressed\\g7szqir9lb-5eo39vgod8.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "535"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ScYhI8yFTR46tr8j8RM4oWvv3b1wgX6xQ1McUdqIoGw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 27 Apr 2025 10:12:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5eo39vgod8"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ScYhI8yFTR46tr8j8RM4oWvv3b1wgX6xQ1McUdqIoGw="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.css",
+      "AssetFile": "F:\\cutly\\Cutly\\obj\\Debug\\net9.0\\compressed\\g7szqir9lb-5eo39vgod8.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001865671642"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "535"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ScYhI8yFTR46tr8j8RM4oWvv3b1wgX6xQ1McUdqIoGw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 27 Apr 2025 10:12:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"PSPHmSkUHTgv2C9eFjWxwf+V3knpdC5xMK+PMhQ2VQc=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-PSPHmSkUHTgv2C9eFjWxwf+V3knpdC5xMK+PMhQ2VQc="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.css",
+      "AssetFile": "F:\\cutly\\Cutly\\wwwroot\\css\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1478"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PSPHmSkUHTgv2C9eFjWxwf+V3knpdC5xMK+PMhQ2VQc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 27 Apr 2025 10:12:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-PSPHmSkUHTgv2C9eFjWxwf+V3knpdC5xMK+PMhQ2VQc="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.css.gz",
+      "AssetFile": "F:\\cutly\\Cutly\\obj\\Debug\\net9.0\\compressed\\g7szqir9lb-5eo39vgod8.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "535"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ScYhI8yFTR46tr8j8RM4oWvv3b1wgX6xQ1McUdqIoGw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 27 Apr 2025 10:12:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ScYhI8yFTR46tr8j8RM4oWvv3b1wgX6xQ1McUdqIoGw="
+        }
+      ]
+    },
+    {
+      "Route": "js/clipboard.582yzztl0m.js",
+      "AssetFile": "F:\\cutly\\Cutly\\obj\\Debug\\net9.0\\compressed\\w1dxbfxr1f-582yzztl0m.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.005405405405"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "184"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NOZSf+f3WOINrUMKxG0gpfxAa1HDlWZIrOKPRVAotmI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 27 Apr 2025 09:49:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"xb51PkCPDgg4cGT6yMfk+ImSppl5uzN/u0klWXXpj4Y=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "582yzztl0m"
+        },
+        {
+          "Name": "label",
+          "Value": "js/clipboard.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-xb51PkCPDgg4cGT6yMfk+ImSppl5uzN/u0klWXXpj4Y="
+        }
+      ]
+    },
+    {
+      "Route": "js/clipboard.582yzztl0m.js",
+      "AssetFile": "F:\\cutly\\Cutly\\wwwroot\\js\\clipboard.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "309"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xb51PkCPDgg4cGT6yMfk+ImSppl5uzN/u0klWXXpj4Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 27 Apr 2025 09:49:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "582yzztl0m"
+        },
+        {
+          "Name": "label",
+          "Value": "js/clipboard.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-xb51PkCPDgg4cGT6yMfk+ImSppl5uzN/u0klWXXpj4Y="
+        }
+      ]
+    },
+    {
+      "Route": "js/clipboard.582yzztl0m.js.gz",
+      "AssetFile": "F:\\cutly\\Cutly\\obj\\Debug\\net9.0\\compressed\\w1dxbfxr1f-582yzztl0m.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "184"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NOZSf+f3WOINrUMKxG0gpfxAa1HDlWZIrOKPRVAotmI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 27 Apr 2025 09:49:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "582yzztl0m"
+        },
+        {
+          "Name": "label",
+          "Value": "js/clipboard.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-NOZSf+f3WOINrUMKxG0gpfxAa1HDlWZIrOKPRVAotmI="
+        }
+      ]
+    },
+    {
+      "Route": "js/clipboard.js",
+      "AssetFile": "F:\\cutly\\Cutly\\obj\\Debug\\net9.0\\compressed\\w1dxbfxr1f-582yzztl0m.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.005405405405"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "184"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NOZSf+f3WOINrUMKxG0gpfxAa1HDlWZIrOKPRVAotmI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 27 Apr 2025 09:49:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"xb51PkCPDgg4cGT6yMfk+ImSppl5uzN/u0klWXXpj4Y=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-xb51PkCPDgg4cGT6yMfk+ImSppl5uzN/u0klWXXpj4Y="
+        }
+      ]
+    },
+    {
+      "Route": "js/clipboard.js",
+      "AssetFile": "F:\\cutly\\Cutly\\wwwroot\\js\\clipboard.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "309"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xb51PkCPDgg4cGT6yMfk+ImSppl5uzN/u0klWXXpj4Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 27 Apr 2025 09:49:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-xb51PkCPDgg4cGT6yMfk+ImSppl5uzN/u0klWXXpj4Y="
+        }
+      ]
+    },
+    {
+      "Route": "js/clipboard.js.gz",
+      "AssetFile": "F:\\cutly\\Cutly\\obj\\Debug\\net9.0\\compressed\\w1dxbfxr1f-582yzztl0m.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "184"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NOZSf+f3WOINrUMKxG0gpfxAa1HDlWZIrOKPRVAotmI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 27 Apr 2025 09:49:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-NOZSf+f3WOINrUMKxG0gpfxAa1HDlWZIrOKPRVAotmI="
+        }
+      ]
+    }
+  ]
 }

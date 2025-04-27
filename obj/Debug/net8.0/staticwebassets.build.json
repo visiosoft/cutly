@@ -1,0 +1,228 @@
+{
+  "Version": 1,
+  "Hash": "sAmk0oFKOVqI8Enl/0J71Ardix7Cuv7xKRLd2sc2aIg=",
+  "Source": "Cutly",
+  "BasePath": "_content/Cutly",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Cutly\\wwwroot",
+      "Source": "Cutly",
+      "ContentRoot": "F:\\cutly\\Cutly\\wwwroot\\",
+      "BasePath": "_content/Cutly",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "F:\\cutly\\Cutly\\wwwroot\\css\\app.css",
+      "SourceId": "Cutly",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\cutly\\Cutly\\wwwroot\\",
+      "BasePath": "_content/Cutly",
+      "RelativePath": "css/app#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "dgcq081eew",
+      "Integrity": "c47zGm8LbQeR8sAnjWNqkKJp+Qf9IPKoPl7QoRSVX3w=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\app.css"
+    },
+    {
+      "Identity": "F:\\cutly\\Cutly\\wwwroot\\js\\clipboard.js",
+      "SourceId": "Cutly",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\cutly\\Cutly\\wwwroot\\",
+      "BasePath": "_content/Cutly",
+      "RelativePath": "js/clipboard#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "582yzztl0m",
+      "Integrity": "xb51PkCPDgg4cGT6yMfk+ImSppl5uzN/u0klWXXpj4Y=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\clipboard.js"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "css/app.css",
+      "AssetFile": "F:\\cutly\\Cutly\\wwwroot\\css\\app.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "892"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"c47zGm8LbQeR8sAnjWNqkKJp+Qf9IPKoPl7QoRSVX3w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 27 Apr 2025 09:46:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-c47zGm8LbQeR8sAnjWNqkKJp+Qf9IPKoPl7QoRSVX3w="
+        }
+      ]
+    },
+    {
+      "Route": "css/app.dgcq081eew.css",
+      "AssetFile": "F:\\cutly\\Cutly\\wwwroot\\css\\app.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "892"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"c47zGm8LbQeR8sAnjWNqkKJp+Qf9IPKoPl7QoRSVX3w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 27 Apr 2025 09:46:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dgcq081eew"
+        },
+        {
+          "Name": "label",
+          "Value": "css/app.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-c47zGm8LbQeR8sAnjWNqkKJp+Qf9IPKoPl7QoRSVX3w="
+        }
+      ]
+    },
+    {
+      "Route": "js/clipboard.582yzztl0m.js",
+      "AssetFile": "F:\\cutly\\Cutly\\wwwroot\\js\\clipboard.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "309"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xb51PkCPDgg4cGT6yMfk+ImSppl5uzN/u0klWXXpj4Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 27 Apr 2025 09:49:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "582yzztl0m"
+        },
+        {
+          "Name": "label",
+          "Value": "js/clipboard.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-xb51PkCPDgg4cGT6yMfk+ImSppl5uzN/u0klWXXpj4Y="
+        }
+      ]
+    },
+    {
+      "Route": "js/clipboard.js",
+      "AssetFile": "F:\\cutly\\Cutly\\wwwroot\\js\\clipboard.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "309"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xb51PkCPDgg4cGT6yMfk+ImSppl5uzN/u0klWXXpj4Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 27 Apr 2025 09:49:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-xb51PkCPDgg4cGT6yMfk+ImSppl5uzN/u0klWXXpj4Y="
+        }
+      ]
+    }
+  ]
+}
