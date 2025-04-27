@@ -36,6 +36,24 @@
             {
                 <div class="alert alert-error mt-2">@errorMessage</div>
             }
+            @if (!string.IsNullOrEmpty(shortenedUrl))
+            {
+                <div class="result-container">
+                    <div class="result-header">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Your shortened URL is ready!</span>
+                    </div>
+                    <div class="result-content">
+                        <div class="shortened-url">
+                            <a href="@shortenedUrl" target="_blank">@shortenedUrl</a>
+                        </div>
+                        <button class="btn btn-copy" @onclick="() => CopyToClipboard(shortenedUrl)">
+                            <i class="fas fa-copy"></i>
+                            <span>Copy</span>
+                        </button>
+                    </div>
+                </div>
+            }
             <p class="terms-text">By using Shorly, you agree to our <a href="/terms">Terms of Service</a> and <a href="/privacy">Privacy Policy</a></p>
         </div>
         <div class="hero-stats">
@@ -525,6 +543,79 @@
         color: var(--primary-color);
     }
 
+    .result-container {
+        margin-top: 1.5rem;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 1rem;
+        padding: 1.5rem;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        animation: fadeIn 0.3s ease;
+    }
+
+    .result-header {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        margin-bottom: 1rem;
+        color: #60a5fa;
+    }
+
+    .result-header i {
+        font-size: 1.25rem;
+    }
+
+    .result-content {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .shortened-url {
+        flex: 1;
+        background: rgba(255, 255, 255, 0.05);
+        padding: 0.75rem 1rem;
+        border-radius: 0.5rem;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .shortened-url a {
+        color: white;
+        text-decoration: none;
+        word-break: break-all;
+    }
+
+    .btn-copy {
+        background: rgba(255, 255, 255, 0.1);
+        color: white;
+        border: none;
+        padding: 0.75rem 1.25rem;
+        border-radius: 0.5rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        transition: all 0.2s ease;
+    }
+
+    .btn-copy:hover {
+        background: rgba(255, 255, 255, 0.15);
+        transform: translateY(-1px);
+    }
+
+    .btn-copy i {
+        font-size: 1rem;
+    }
+
+    @@keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
     @@media (max-width: 768px) {
         .hero-content h1 {
             font-size: 3rem;
@@ -568,6 +659,15 @@
 
         .url-card {
             margin: 0 1rem;
+        }
+
+        .result-content {
+            flex-direction: column;
+        }
+
+        .btn-copy {
+            width: 100%;
+            justify-content: center;
         }
     }
 </style>
