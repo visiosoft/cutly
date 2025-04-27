@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Cutly")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+964d99d1f89097e5a67a5e25c93ea7c2fa61a0b8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bfd67f49127db24f72836f5c0d521e13e056b0c8")]
 [assembly: System.Reflection.AssemblyProductAttribute("Cutly")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Cutly")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
