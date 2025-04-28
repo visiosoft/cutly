@@ -1,24 +1,20 @@
 {
   "Files": [
     {
-      "Id": "F:\\cutly\\Cutly\\wwwroot\\css\\app.css",
+      "Id": "C:\\Users\\emc_x\\Downloads\\cuttly\\cutly\\wwwroot\\css\\app.css",
       "PackagePath": "staticwebassets\\css\\app.css"
     },
     {
-      "Id": "F:\\cutly\\Cutly\\wwwroot\\css\\site.css",
+      "Id": "C:\\Users\\emc_x\\Downloads\\cuttly\\cutly\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "F:\\cutly\\Cutly\\wwwroot\\index.html",
+      "Id": "C:\\Users\\emc_x\\Downloads\\cuttly\\cutly\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },
     {
-      "Id": "F:\\cutly\\Cutly\\wwwroot\\js\\clipboard.js",
+      "Id": "C:\\Users\\emc_x\\Downloads\\cuttly\\cutly\\wwwroot\\js\\clipboard.js",
       "PackagePath": "staticwebassets\\js\\clipboard.js"
-    },
-    {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Cutly.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
-      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Cutly.Microsoft.AspNetCore.StaticWebAssets.props",

@@ -1,0 +1,84 @@
+@page "/analytics"
+@inject IJSRuntime JS
+@inject NavigationManager Navigation
+@inject IUrlShortenerService UrlService
+
+<h2>URL Access Analytics</h2>
+<p>Below is a list of your shortened URLs and the IP addresses that have accessed them.</p>
+
+@if (userUrls.Count == 0)
+{
+    <div class="alert alert-info">You haven't shortened any URLs yet.</div>
+}
+else
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Short URL</th>
+                <th>Original URL</th>
+                <th>Clicks</th>
+                <th>IP Addresses</th>
+            </tr>
+        </thead>
+        <tbody>
+        @foreach (var url in userUrls)
+        {
+            <tr>
+                <td><a href="@(@baseUrl + "/s/" + url.ShortCode)" target="_blank">@(@baseUrl + "/s/" + url.ShortCode)</a></td>
+                <td style="max-width:300px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="@url.OriginalUrl">@url.OriginalUrl</td>
+                <td>@url.ClickCount</td>
+                <td>
+                    @if (url.AccessIpAddresses?.Count > 0)
+                    {
+                        <ul style="margin-bottom:0;">
+                        @foreach (var ip in url.AccessIpAddresses)
+                        {
+                            <li>@ip</li>
+                        }
+                        </ul>
+                    }
+                    else
+                    {
+                        <span class="text-muted">No accesses yet</span>
+                    }
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+}
+
+<!-- Placeholder for world map visualization -->
+<div class="mt-5">
+    <h3>World Map (Coming Soon)</h3>
+    <div style="height:400px;background:#f8f9fa;border-radius:1rem;display:flex;align-items:center;justify-content:center;">
+        <span class="text-muted">World map visualization of IPs will appear here.</span>
+    </div>
+</div>
+
+@code {
+    private string userId = string.Empty;
+    private List<UrlMapping> userUrls = new();
+    private string baseUrl = string.Empty;
+
+    protected override async Task OnInitializedAsync()
+    {
+        userId = await JS.InvokeAsync<string>("localStorage.getItem", "userId") ?? string.Empty;
+        if (string.IsNullOrEmpty(userId))
+        {
+            Navigation.NavigateTo("/login");
+        }
+        baseUrl = Navigation.BaseUri.TrimEnd('/');
+        await LoadUserUrls();
+    }
+
+    private async Task LoadUserUrls()
+    {
+        if (UrlService is Cutly.Services.UrlShortenerService concreteService)
+        {
+            var mappings = await concreteService.GetUrlMappingsForUserAsync(userId);
+            userUrls = mappings.ToList();
+        }
+    }
+} 

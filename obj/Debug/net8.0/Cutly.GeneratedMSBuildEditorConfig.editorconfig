@@ -9,73 +9,87 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Cutly
 build_property.RootNamespace = Cutly
-build_property.ProjectDir = F:\cutly\Cutly\
+build_property.ProjectDir = C:\Users\emc_x\Downloads\cuttly\cutly\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = F:\cutly\Cutly
+build_property.MSBuildProjectDirectory = C:\Users\emc_x\Downloads\cuttly\cutly
 build_property._RazorSourceGeneratorDebug = 
-build_property.EffectiveAnalysisLevelStyle = 8.0
-build_property.EnableCodeStyleSeverity = 
 
-[F:/cutly/Cutly/App.razor]
+[C:/Users/emc_x/Downloads/cuttly/cutly/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/cutly/Cutly/Pages/App.razor]
+[C:/Users/emc_x/Downloads/cuttly/cutly/Pages/App.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/cutly/Cutly/Pages/Copy.razor]
+[C:/Users/emc_x/Downloads/cuttly/cutly/Pages/Copy.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29weS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/cutly/Cutly/Pages/Features.razor]
+[C:/Users/emc_x/Downloads/cuttly/cutly/Pages/Dashboard.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGFzaGJvYXJkLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emc_x/Downloads/cuttly/cutly/Pages/Features.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmVhdHVyZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/cutly/Cutly/Pages/Index.razor]
+[C:/Users/emc_x/Downloads/cuttly/cutly/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/cutly/Cutly/Pages/Login.razor]
+[C:/Users/emc_x/Downloads/cuttly/cutly/Pages/Login.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/cutly/Cutly/Pages/Pricing.razor]
+[C:/Users/emc_x/Downloads/cuttly/cutly/Pages/Pricing.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpY2luZy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/cutly/Cutly/Pages/Signup.razor]
+[C:/Users/emc_x/Downloads/cuttly/cutly/Pages/Signup.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2lnbnVwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/cutly/Cutly/Pages/UrlShortener.razor]
+[C:/Users/emc_x/Downloads/cuttly/cutly/Pages/TestMongo.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVzdE1vbmdvLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emc_x/Downloads/cuttly/cutly/Pages/UrlAccessAnalytics.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXJsQWNjZXNzQW5hbHl0aWNzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emc_x/Downloads/cuttly/cutly/Pages/UrlShortener.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXJsU2hvcnRlbmVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/cutly/Cutly/Pages/_Imports.razor]
+[C:/Users/emc_x/Downloads/cuttly/cutly/Pages/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/cutly/Cutly/Shared/LandingLayout.razor]
+[C:/Users/emc_x/Downloads/cuttly/cutly/Shared/DashboardNav.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXERhc2hib2FyZE5hdi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/emc_x/Downloads/cuttly/cutly/Shared/LandingLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXExhbmRpbmdMYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/cutly/Cutly/Shared/MainLayout.razor]
+[C:/Users/emc_x/Downloads/cuttly/cutly/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/cutly/Cutly/_Imports.razor]
+[C:/Users/emc_x/Downloads/cuttly/cutly/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/cutly/Cutly/Pages/_Host.cshtml]
+[C:/Users/emc_x/Downloads/cuttly/cutly/Pages/_Host.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/cutly/Cutly/Pages/_Layout.cshtml]
+[C:/Users/emc_x/Downloads/cuttly/cutly/Pages/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0xheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

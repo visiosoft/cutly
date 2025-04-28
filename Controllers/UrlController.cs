@@ -23,10 +23,12 @@ namespace Cutly.Controllers
             {
                 return BadRequest(new { error = "Invalid URL format" });
             }
-
-            var shortCode = await _urlShortenerService.CreateShortUrl(request.Url);
+            if (string.IsNullOrEmpty(request.UserId))
+            {
+                return BadRequest(new { error = "UserId is required" });
+            }
+            var shortCode = await _urlShortenerService.CreateShortUrl(request.Url, request.UserId);
             var shortUrl = $"{Request.Scheme}://{Request.Host}/{shortCode}";
-
             return Ok(new { shortUrl, originalUrl = request.Url });
         }
     }
@@ -36,5 +38,6 @@ namespace Cutly.Controllers
         [Required]
         [Url]
         public string Url { get; set; } = string.Empty;
+        public string UserId { get; set; } = string.Empty;
     }
 } 

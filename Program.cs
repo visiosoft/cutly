@@ -17,7 +17,11 @@ builder.Services.AddSwaggerGen(c =>
 });
 
 // Add HttpClient
-builder.Services.AddHttpClient();
+builder.Services.AddHttpClient("ServerAPI", client =>
+{
+    client.BaseAddress = new Uri(builder.Configuration["BaseUrl"] ?? "https://localhost:5269/");
+});
+builder.Services.AddScoped(sp => sp.GetRequiredService<IHttpClientFactory>().CreateClient("ServerAPI"));
 
 // Add DbContext
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
@@ -25,6 +29,9 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 
 // Add UrlShortenerService
 builder.Services.AddScoped<IUrlShortenerService, UrlShortenerService>();
+
+// Add UserService as a singleton
+builder.Services.AddSingleton<UserService>();
 
 // Configure JSON options
 builder.Services.Configure<JsonOptions>(options =>
@@ -56,7 +63,7 @@ app.MapFallbackToPage("/_Host");
 app.MapControllers();
 
 // Add a custom route for short URLs
-app.MapGet("/s/{shortCode}", async (string shortCode, IUrlShortenerService urlShortenerService) =>
+app.MapGet("/s/{shortCode}", async (HttpContext context, string shortCode, IUrlShortenerService urlShortenerService) =>
 {
     var originalUrl = await urlShortenerService.GetOriginalUrl(shortCode);
     if (string.IsNullOrEmpty(originalUrl))
@@ -64,7 +71,16 @@ app.MapGet("/s/{shortCode}", async (string shortCode, IUrlShortenerService urlSh
         return Results.NotFound(new { error = "Short URL not found" });
     }
 
-    await urlShortenerService.IncrementClickCount(shortCode);
+    // Get the visitor's IP address
+    var ipAddress = context.Connection.RemoteIpAddress?.ToString() ?? "unknown";
+    if (urlShortenerService is Cutly.Services.UrlShortenerService concreteService)
+    {
+        await concreteService.IncrementClickCountAndTrackIp(shortCode, ipAddress);
+    }
+    else
+    {
+        await urlShortenerService.IncrementClickCount(shortCode);
+    }
     return Results.Redirect(originalUrl);
 });
 

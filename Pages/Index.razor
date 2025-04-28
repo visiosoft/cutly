@@ -677,10 +677,18 @@
     private string shortenedUrl = string.Empty;
     private string errorMessage = string.Empty;
     private IEnumerable<ShortenedUrl>? recentUrls;
+    private string userId = string.Empty;
+    private bool initialized = false;
 
-    protected override async Task OnInitializedAsync()
+    protected override async Task OnAfterRenderAsync(bool firstRender)
     {
-        await LoadRecentUrls();
+        if (firstRender && !initialized)
+        {
+            userId = await JSRuntime.InvokeAsync<string>("localStorage.getItem", "userId") ?? "anonymous";
+            await LoadRecentUrls();
+            initialized = true;
+            StateHasChanged();
+        }
     }
 
     private bool IsValidUrl => Uri.TryCreate(longUrl, UriKind.Absolute, out _);
@@ -690,7 +698,7 @@
         try
         {
             errorMessage = string.Empty;
-            var result = await UrlService.ShortenUrlAsync(longUrl);
+            var result = await UrlService.ShortenUrlAsync(longUrl, userId);
             shortenedUrl = result.ShortUrl;
             await LoadRecentUrls();
         }

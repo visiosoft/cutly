@@ -26,7 +26,7 @@ namespace Cutly.Services
             _baseUrl = configuration["BaseUrl"] ?? "http://localhost:5269";
         }
 
-        public async Task<string> CreateShortUrl(string originalUrl)
+        public async Task<string> CreateShortUrl(string originalUrl, string userId)
         {
             var shortCode = GenerateShortCode();
             
@@ -35,7 +35,8 @@ namespace Cutly.Services
                 OriginalUrl = originalUrl,
                 ShortCode = shortCode,
                 CreatedAt = DateTime.UtcNow,
-                ClickCount = 0
+                ClickCount = 0,
+                UserId = userId
             };
 
             _context.UrlMappings.Add(urlMapping);
@@ -73,9 +74,9 @@ namespace Cutly.Services
             return shortCode;
         }
 
-        public async Task<ShortenedUrl> ShortenUrlAsync(string longUrl)
+        public async Task<ShortenedUrl> ShortenUrlAsync(string longUrl, string userId)
         {
-            var shortCode = await CreateShortUrl(longUrl);
+            var shortCode = await CreateShortUrl(longUrl, userId);
             return new ShortenedUrl
             {
                 LongUrl = longUrl,
@@ -116,6 +117,43 @@ namespace Cutly.Services
                 CreatedAt = m.CreatedAt,
                 ClickCount = m.ClickCount
             });
+        }
+
+        public async Task IncrementClickCountAndTrackIp(string shortCode, string ipAddress)
+        {
+            var mapping = await _context.UrlMappings.FirstOrDefaultAsync(u => u.ShortCode == shortCode);
+            if (mapping != null)
+            {
+                mapping.ClickCount++;
+                if (!mapping.AccessIpAddresses.Contains(ipAddress))
+                {
+                    mapping.AccessIpAddresses.Add(ipAddress);
+                }
+                await _context.SaveChangesAsync();
+            }
+        }
+
+        public async Task<IEnumerable<ShortenedUrl>> GetUserUrlsAsync(string userId)
+        {
+            var mappings = await _context.UrlMappings
+                .Where(u => u.UserId == userId)
+                .OrderByDescending(u => u.CreatedAt)
+                .ToListAsync();
+            return mappings.Select(m => new ShortenedUrl
+            {
+                LongUrl = m.OriginalUrl,
+                ShortUrl = $"{_baseUrl}/s/{m.ShortCode}",
+                CreatedAt = m.CreatedAt,
+                ClickCount = m.ClickCount
+            });
+        }
+
+        public async Task<IEnumerable<UrlMapping>> GetUrlMappingsForUserAsync(string userId)
+        {
+            return await _context.UrlMappings
+                .Where(u => u.UserId == userId)
+                .OrderByDescending(u => u.CreatedAt)
+                .ToListAsync();
         }
     }
 } 

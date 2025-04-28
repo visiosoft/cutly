@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "NviHJJfjJ9RUcUBy1zYLLTpllEIwyMcQE8IMk/M/QMw=",
+  "Hash": "QAFyjVQS399YmFkmoj3SBrgx0sz8Dg3wYYkzwcocpXc=",
   "Source": "Cutly",
   "BasePath": "_content/Cutly",
   "Mode": "Default",
@@ -10,425 +10,87 @@
     {
       "Name": "Cutly\\wwwroot",
       "Source": "Cutly",
-      "ContentRoot": "F:\\cutly\\Cutly\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\emc_x\\Downloads\\cuttly\\cutly\\wwwroot\\",
       "BasePath": "_content/Cutly",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "F:\\cutly\\Cutly\\wwwroot\\css\\app.css",
+      "Identity": "C:\\Users\\emc_x\\Downloads\\cuttly\\cutly\\wwwroot\\css\\app.css",
       "SourceId": "Cutly",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\cutly\\Cutly\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\emc_x\\Downloads\\cuttly\\cutly\\wwwroot\\",
       "BasePath": "_content/Cutly",
-      "RelativePath": "css/app#[.{fingerprint}]?.css",
+      "RelativePath": "css/app.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "dgcq081eew",
-      "Integrity": "c47zGm8LbQeR8sAnjWNqkKJp+Qf9IPKoPl7QoRSVX3w=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\app.css"
     },
     {
-      "Identity": "F:\\cutly\\Cutly\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\emc_x\\Downloads\\cuttly\\cutly\\wwwroot\\css\\site.css",
       "SourceId": "Cutly",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\cutly\\Cutly\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\emc_x\\Downloads\\cuttly\\cutly\\wwwroot\\",
       "BasePath": "_content/Cutly",
-      "RelativePath": "css/site#[.{fingerprint}]?.css",
+      "RelativePath": "css/site.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "fw379a3l6y",
-      "Integrity": "f5AsvlAbBnVjKwsv77KIhmR20t6wwiJCUDEKSaT5dBQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "F:\\cutly\\Cutly\\wwwroot\\index.html",
+      "Identity": "C:\\Users\\emc_x\\Downloads\\cuttly\\cutly\\wwwroot\\index.html",
       "SourceId": "Cutly",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\cutly\\Cutly\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\emc_x\\Downloads\\cuttly\\cutly\\wwwroot\\",
       "BasePath": "_content/Cutly",
-      "RelativePath": "index#[.{fingerprint}]?.html",
+      "RelativePath": "index.html",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "v1kmmqhwcu",
-      "Integrity": "/WJbsPyvZYDWglYrfSMMFjwFM/ZCjFcKiP1riDzXVA4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\index.html"
     },
     {
-      "Identity": "F:\\cutly\\Cutly\\wwwroot\\js\\clipboard.js",
+      "Identity": "C:\\Users\\emc_x\\Downloads\\cuttly\\cutly\\wwwroot\\js\\clipboard.js",
       "SourceId": "Cutly",
       "SourceType": "Discovered",
-      "ContentRoot": "F:\\cutly\\Cutly\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\emc_x\\Downloads\\cuttly\\cutly\\wwwroot\\",
       "BasePath": "_content/Cutly",
-      "RelativePath": "js/clipboard#[.{fingerprint}]?.js",
+      "RelativePath": "js/clipboard.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
+      "AssetMergeBehavior": "PreferTarget",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "582yzztl0m",
-      "Integrity": "xb51PkCPDgg4cGT6yMfk+ImSppl5uzN/u0klWXXpj4Y=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\clipboard.js"
-    }
-  ],
-  "Endpoints": [
-    {
-      "Route": "css/app.css",
-      "AssetFile": "F:\\cutly\\Cutly\\wwwroot\\css\\app.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "892"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"c47zGm8LbQeR8sAnjWNqkKJp+Qf9IPKoPl7QoRSVX3w=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 27 Apr 2025 09:46:07 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-c47zGm8LbQeR8sAnjWNqkKJp+Qf9IPKoPl7QoRSVX3w="
-        }
-      ]
-    },
-    {
-      "Route": "css/app.dgcq081eew.css",
-      "AssetFile": "F:\\cutly\\Cutly\\wwwroot\\css\\app.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "892"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"c47zGm8LbQeR8sAnjWNqkKJp+Qf9IPKoPl7QoRSVX3w=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 27 Apr 2025 09:46:07 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "dgcq081eew"
-        },
-        {
-          "Name": "label",
-          "Value": "css/app.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-c47zGm8LbQeR8sAnjWNqkKJp+Qf9IPKoPl7QoRSVX3w="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.css",
-      "AssetFile": "F:\\cutly\\Cutly\\wwwroot\\css\\site.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "5391"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"f5AsvlAbBnVjKwsv77KIhmR20t6wwiJCUDEKSaT5dBQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 27 Apr 2025 12:21:10 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-f5AsvlAbBnVjKwsv77KIhmR20t6wwiJCUDEKSaT5dBQ="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.fw379a3l6y.css",
-      "AssetFile": "F:\\cutly\\Cutly\\wwwroot\\css\\site.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "5391"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"f5AsvlAbBnVjKwsv77KIhmR20t6wwiJCUDEKSaT5dBQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 27 Apr 2025 12:21:10 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "fw379a3l6y"
-        },
-        {
-          "Name": "label",
-          "Value": "css/site.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-f5AsvlAbBnVjKwsv77KIhmR20t6wwiJCUDEKSaT5dBQ="
-        }
-      ]
-    },
-    {
-      "Route": "index.html",
-      "AssetFile": "F:\\cutly\\Cutly\\wwwroot\\index.html",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "476"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/html"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"/WJbsPyvZYDWglYrfSMMFjwFM/ZCjFcKiP1riDzXVA4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 27 Apr 2025 12:18:44 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-/WJbsPyvZYDWglYrfSMMFjwFM/ZCjFcKiP1riDzXVA4="
-        }
-      ]
-    },
-    {
-      "Route": "index.v1kmmqhwcu.html",
-      "AssetFile": "F:\\cutly\\Cutly\\wwwroot\\index.html",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "476"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/html"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"/WJbsPyvZYDWglYrfSMMFjwFM/ZCjFcKiP1riDzXVA4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 27 Apr 2025 12:18:44 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "v1kmmqhwcu"
-        },
-        {
-          "Name": "label",
-          "Value": "index.html"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-/WJbsPyvZYDWglYrfSMMFjwFM/ZCjFcKiP1riDzXVA4="
-        }
-      ]
-    },
-    {
-      "Route": "js/clipboard.582yzztl0m.js",
-      "AssetFile": "F:\\cutly\\Cutly\\wwwroot\\js\\clipboard.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "309"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"xb51PkCPDgg4cGT6yMfk+ImSppl5uzN/u0klWXXpj4Y=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 27 Apr 2025 09:49:08 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "582yzztl0m"
-        },
-        {
-          "Name": "label",
-          "Value": "js/clipboard.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-xb51PkCPDgg4cGT6yMfk+ImSppl5uzN/u0klWXXpj4Y="
-        }
-      ]
-    },
-    {
-      "Route": "js/clipboard.js",
-      "AssetFile": "F:\\cutly\\Cutly\\wwwroot\\js\\clipboard.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "309"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"xb51PkCPDgg4cGT6yMfk+ImSppl5uzN/u0klWXXpj4Y=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 27 Apr 2025 09:49:08 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-xb51PkCPDgg4cGT6yMfk+ImSppl5uzN/u0klWXXpj4Y="
-        }
-      ]
     }
   ]
 }

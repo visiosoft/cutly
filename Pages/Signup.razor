@@ -1,4 +1,5 @@
 @page "/signup"
+@inject HttpClient Http
 
 <div class="signup-container">
     <div class="signup-form">
@@ -16,7 +17,7 @@
         </div>
         
         <button class="btn btn-primary" @onclick="HandleSignup">Sign Up</button>
-        
+        <p style="color:@messageColor">@message</p>
         <p class="login-link">
             Already have an account? <a href="/login">Log in</a>
         </p>
@@ -114,10 +115,21 @@
 @code {
     private string email = "";
     private string password = "";
+    private string message = string.Empty;
+    private string messageColor = "black";
 
-    private void HandleSignup()
+    private async Task HandleSignup()
     {
-        // TODO: Implement signup logic
-        Console.WriteLine($"Signup attempt with email: {email}");
+        var response = await Http.PostAsJsonAsync("/api/auth/signup", new { Email = email, PasswordHash = password });
+        if (response.IsSuccessStatusCode)
+        {
+            message = await response.Content.ReadAsStringAsync();
+            messageColor = "green";
+        }
+        else
+        {
+            message = await response.Content.ReadAsStringAsync();
+            messageColor = "red";
+        }
     }
 } 

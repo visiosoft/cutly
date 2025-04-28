@@ -1,0 +1,62 @@
+@using Microsoft.AspNetCore.Components
+
+<div class="sidebar">
+    <h4>Menu</h4>
+    <ul>
+        <li><a href="/dashboard">Dashboard</a></li>
+        <li><a href="#url-shortener">URL Shortener</a></li>
+        <li><a href="/analytics">Analytics</a></li>
+        <li><button class="btn btn-link p-0" @onclick="OnLogout">Logout</button></li>
+    </ul>
+    <div class="sidebar-user">Logged in as <b>@UserEmail</b></div>
+</div>
+
+@code {
+    [Parameter] public string UserEmail { get; set; } = string.Empty;
+    [Parameter] public EventCallback OnLogout { get; set; }
+}
+
+<style>
+.sidebar {
+    width: 220px;
+    background: #f8f9fa;
+    padding: 2rem 1rem 1rem 1rem;
+    border-right: 1px solid #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.sidebar h4 {
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    color: #4f46e5;
+}
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2rem 0;
+    width: 100%;
+}
+.sidebar ul li {
+    margin-bottom: 1rem;
+}
+.sidebar ul li a, .sidebar ul li button {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.1rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    transition: color 0.2s;
+}
+.sidebar ul li a:hover, .sidebar ul li button:hover {
+    color: #4f46e5;
+    text-decoration: underline;
+}
+.sidebar-user {
+    margin-top: auto;
+    font-size: 0.95rem;
+    color: #666;
+}
+</style> 

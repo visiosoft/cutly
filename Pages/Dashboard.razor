@@ -1,0 +1,199 @@
+@page "/dashboard"
+@inject IJSRuntime JS
+@inject NavigationManager Navigation
+@inject IUrlShortenerService UrlService
+
+<div class="dashboard-layout">
+    <DashboardNav UserEmail="@userEmail" OnLogout="Logout" />
+    <main class="dashboard-content">
+        <h2 class="mb-4">Welcome to your Dashboard!</h2>
+        <div class="dashboard-grid">
+            <section id="url-shortener" class="dashboard-section">
+                <h3>URL Shortener</h3>
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <label for="originalUrl" class="form-label">Enter your URL:</label>
+                            <input type="url" class="form-control" id="originalUrl" @bind="originalUrl" placeholder="https://example.com" />
+                        </div>
+                        <div class="d-grid">
+                            <button class="btn btn-primary" @onclick="ShortenUrl" disabled="@(!IsValidUrl)">Shorten URL</button>
+                        </div>
+                        @if (!string.IsNullOrEmpty(shortenedUrl))
+                        {
+                            <div class="mt-4">
+                                <div class="alert alert-success">
+                                    <h5>Your shortened URL:</h5>
+                                    <div class="d-flex align-items-center">
+                                        <input type="text" class="form-control" value="@shortenedUrl" readonly />
+                                        <button class="btn btn-outline-secondary ms-2" @onclick="() => CopyToClipboard(shortenedUrl)">
+                                            Copy
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                        @if (!string.IsNullOrEmpty(errorMessage))
+                        {
+                            <div class="mt-4">
+                                <div class="alert alert-danger">
+                                    @errorMessage
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </section>
+            <section class="dashboard-section dashboard-history">
+                <h3>Your Shortened URLs</h3>
+                @if (userUrls.Count == 0)
+                {
+                    <div class="alert alert-info">You haven't shortened any URLs yet.</div>
+                }
+                else
+                {
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Short URL</th>
+                                <th>Original URL</th>
+                                <th>Clicks</th>
+                                <th>Created</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        @foreach (var url in userUrls)
+                        {
+                            <tr>
+                                <td><a href="@url.ShortUrl" target="_blank">@url.ShortUrl</a></td>
+                                <td style="max-width:300px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="@url.LongUrl">@url.LongUrl</td>
+                                <td>@url.ClickCount</td>
+                                <td>@url.CreatedAt.ToString("yyyy-MM-dd HH:mm")</td>
+                            </tr>
+                        }
+                        </tbody>
+                    </table>
+                }
+            </section>
+        </div>
+    </main>
+</div>
+
+<style>
+.dashboard-layout {
+    display: flex;
+    min-height: 100vh;
+}
+.dashboard-content {
+    flex: 1;
+    padding: 2rem 3rem;
+    background: #f6f8fa;
+}
+.dashboard-grid {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.dashboard-section {
+    flex: 1 1 350px;
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+.dashboard-history {
+    min-width: 400px;
+    max-width: 700px;
+}
+.table {
+    width: 100%;
+    margin-bottom: 0;
+    background: #fff;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+.table th, .table td {
+    padding: 0.75rem 1rem;
+    vertical-align: middle;
+}
+.table th {
+    background: #f8f9fa;
+    font-weight: 600;
+}
+.table-striped tbody tr:nth-of-type(odd) {
+    background: #f6f8fa;
+}
+</style>
+
+@code {
+    private string userEmail = string.Empty;
+    private string userId = string.Empty;
+    private string originalUrl = "";
+    private string shortenedUrl = "";
+    private string errorMessage = "";
+    private List<ShortenedUrl> userUrls = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        userEmail = await JS.InvokeAsync<string>("localStorage.getItem", "userEmail") ?? string.Empty;
+        userId = await JS.InvokeAsync<string>("localStorage.getItem", "userId") ?? string.Empty;
+        if (string.IsNullOrEmpty(userEmail) || string.IsNullOrEmpty(userId))
+        {
+            Navigation.NavigateTo("/login");
+        }
+        await LoadUserUrls();
+    }
+
+    private async Task Logout()
+    {
+        await JS.InvokeVoidAsync("localStorage.removeItem", "userEmail");
+        await JS.InvokeVoidAsync("localStorage.removeItem", "userId");
+        Navigation.NavigateTo("/login", true);
+    }
+
+    private bool IsValidUrl => !string.IsNullOrEmpty(originalUrl) &&
+                              Uri.TryCreate(originalUrl, UriKind.Absolute, out _);
+
+    private async Task ShortenUrl()
+    {
+        try
+        {
+            var result = await UrlService.ShortenUrlAsync(originalUrl, userId);
+            shortenedUrl = result.ShortUrl;
+            errorMessage = "";
+            await LoadUserUrls();
+        }
+        catch
+        {
+            errorMessage = "Failed to shorten URL. Please try again.";
+            shortenedUrl = "";
+        }
+    }
+
+    private async Task LoadUserUrls()
+    {
+        if (UrlService is Cutly.Services.UrlShortenerService concreteService)
+        {
+            var urls = await concreteService.GetUrlMappingsForUserAsync(userId);
+            userUrls = urls.Select(m => new ShortenedUrl {
+                LongUrl = m.OriginalUrl,
+                ShortUrl = $"/s/{m.ShortCode}",
+                CreatedAt = m.CreatedAt,
+                ClickCount = m.ClickCount
+            }).ToList();
+        }
+    }
+
+    private async Task CopyToClipboard(string url)
+    {
+        try
+        {
+            await JS.InvokeVoidAsync("navigator.clipboard.writeText", url);
+        }
+        catch
+        {
+            errorMessage = "Failed to copy URL to clipboard.";
+        }
+    }
+} 

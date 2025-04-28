@@ -1,0 +1,26 @@
+@page "/testmongo"
+@inject HttpClient Http
+
+<h3>Test MongoDB Connection</h3>
+<button @onclick="TestConnection">Test Connection</button>
+<p style="color:@messageColor">@message</p>
+
+@code {
+    private string message = string.Empty;
+    private string messageColor = "black";
+
+    private async Task TestConnection()
+    {
+        var response = await Http.GetAsync("api/auth/testconnection");
+        if (response.IsSuccessStatusCode)
+        {
+            message = await response.Content.ReadAsStringAsync();
+            messageColor = "green";
+        }
+        else
+        {
+            message = await response.Content.ReadAsStringAsync();
+            messageColor = "red";
+        }
+    }
+} 
